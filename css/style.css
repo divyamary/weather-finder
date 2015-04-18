@@ -1,0 +1,117 @@
+	html, body{
+		width:100%;
+		height:100%;
+		background-color: #030303;
+		background-image: url(http://www.transparenttextures.com/patterns/graphy-dark.png);
+	}
+	
+	h1{
+	font-family: 'BenchNine', sans-serif;
+	text-align:center;
+	color:#f2eded;
+	}
+
+	.container{
+		width:100%;
+		height:100%;
+		background-size:cover;
+		background-position:center;
+	}
+	
+	.map {
+		width:100%;
+		height:100%;
+		top:50px;
+		position:relative;
+		overflow:auto;
+	}
+	
+	.result{
+	    background-color:#343434;
+		color:#fff;
+		padding:10px;
+		width:500px;
+		font-family: 'BenchNine', sans-serif;
+		font-size:20px;
+		box-shadow: 0 3px 0 0 #000;
+	}
+	
+	.result{
+		display:none;
+	}
+	
+	.result-success{
+		border-bottom:1px solid #0088db;
+	}
+	.result-fail{
+		border-bottom:1px solid #dc0000;
+	}
+	.form-control::-webkit-input-placeholder {
+		color:rgb(0, 136, 219);
+		font-family: 'BenchNine', sans-serif;
+	}
+	[placeholder]:focus::-webkit-input-placeholder {
+		color:transparent;
+	}
+	#show{
+		position:absolute;
+		top:400px;
+		z-index:10;
+		color:#000;
+	}
+
+	#cityname{
+		background: rgba(0, 0, 0, 0.7);
+		color:#fff;
+		height:50px;
+		font-size:26px;
+	}
+
+	#find{
+		background-color:rgba(0, 136, 219, 0.5);
+		border:1px solid white;
+		height:50px;
+		color:#000;
+		font-size:18px;
+		text-transform:uppercase;
+	}
+	
+	#find:hover{
+		color:#fff;
+	}
+	
+	#find{
+		font-family: 'BenchNine', sans-serif;
+		font-weight:bold;
+	}
+	
+	.input-group{
+	width:100%;
+	}
+	
+	/* CSS for the zoom-in and zoom-out buttons */
+		.zoomIn, .zoomOut {
+			background-color:#fff;
+			border:1px solid #ccc;
+			color:#000;
+			width:15px;
+			height:15px;
+			line-height: 15px;
+			text-align:center;
+			border-radius:3px;
+			cursor:pointer;
+			position:absolute;
+			top : 10px;
+			font-weight:bold;
+			left : 10px;
+			
+			-webkit-user-select: none; // For Webkit
+			-khtml-user-select: none;
+			-moz-user-select: none; // For Mozilla
+			-o-user-select: none;
+			user-select: none; // Default
+		}
+		
+		.zoomOut {
+			top:30px;
+		}
